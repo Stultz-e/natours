@@ -1,7 +1,7 @@
 .btn {
     &:link,
     &:visited {
-        text-transform: none;
+        text-transform: uppercase;
         text-decoration: none;
         padding: 1.5rem 4rem;
         display: inline-block;
@@ -34,13 +34,22 @@
         z-index: -1;
         transition: all .4s;
     }
-    &--white::after {
-        background-color: $color-white;
+
+    &--green {
+        background-color: $color-primary-light;
+        color: $color-white;
     }
+
+    &--green::after {
+        background-color: $color-primary-light;
+    }
+
     &:hover::after {
         transform: scaleX(1.4) scaleY(1.8);
         opacity: 0;
     }
+
+
     &--animated {
         animation: moveInBottom .5s ease-out .75s;
         animation-fill-mode: backwards;
