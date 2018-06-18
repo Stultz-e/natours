@@ -140,6 +140,21 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 5px 1px rgba(0, 0, 0, 0.2); }
 
+.btn--green {
+  background-color: #7ed56f;
+  color: #fff; }
+
+.btn--green:after {
+  background-color: #7ed56f; }
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.8);
+  opacity: 0; }
+
+.btn--animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; }
+
 .btn--white {
   background-color: #fff;
   color: #777; }
@@ -156,20 +171,8 @@ body {
   z-index: -1;
   transition: all .4s; }
 
-.btn--green {
-  background-color: #7ed56f;
-  color: #fff; }
-
-.btn--green::after {
-  background-color: #7ed56f; }
-
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.8);
-  opacity: 0; }
-
-.btn--animated {
-  animation: moveInBottom .5s ease-out .75s;
-  animation-fill-mode: backwards; }
+.btn--white::after {
+  background-color: #fff; }
 
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
@@ -459,3 +462,14 @@ body {
 .section-stories {
   padding: 15rem 0;
   position: relative; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+
+.book {
+  background-image: url(../img/nat-10.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.15);
+  height: 50rem; }
