@@ -1,3 +1,14 @@
+/* MEDIA QUERY MANAGER
+0 - 600PX:    PHONE
+600 - 900PX: TABLET PORTRAIT
+900 - 1200PX TABLET LANDSCAPE
+1200 - 1800 IS WHERE OUR NORMAL STYLES APPY
+1800PX + :   BIG DESKTOP */
+/* breakpoint argument choices:
+- phone 
+- tab-port
+-tab-land
+-big-desktop */
 /* COLORS */
 /* FONT SIZE  */
 /* GRID */
@@ -41,10 +52,14 @@
 html {
   /*     this defines what 1 rem is  */
   font-size: 62.5%; }
-
-body {
-  box-sizing: border-box;
-  padding: 3rem; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
+  html body {
+    box-sizing: border-box; }
 
 body {
   font-family: "Lato", sans-serif;
