@@ -15,9 +15,8 @@
 
 @mixin respond-phone {
     @media (max-width: 600px) {
-        @content
+        @content;
     }
-    ;
 }
 
 /* MEDIA QUERY MANAGER
@@ -40,20 +39,20 @@
         }
         ;
     }
-    @if $breakpoint==phone {
-        @media (max-width: 600px) {
+    @if $breakpoint== tab-port {
+        @media (max-width: 900px) {
             @content
         }
         ;
     }
-    @if $breakpoint==phone {
-        @media (max-width: 600px) {
+    @if $breakpoint==tab-land {
+        @media (max-width: 1200px) {
             @content
         }
         ;
     }
-    @if $breakpoint==phone {
-        @media (max-width: 600px) {
+    @if $breakpoint==big-desktop {
+        @media (min-width: 1800px) {
             @content
         }
         ;
